@@ -1,0 +1,7 @@
+.thanks-section {
+  min-height: 40vh;
+  margin-top: 300px;
+
+  display: grid;
+  place-items: center;
+}

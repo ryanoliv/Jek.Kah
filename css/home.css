@@ -1,0 +1,214 @@
+body {
+  opacity: 0;
+}
+
+.fade-in {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s forwards;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.home-section {
+  min-height: calc(100vh - 130px);
+  /* min-height: 90vh; */
+  margin-top: 130px;
+  background-image: linear-gradient(
+      rgba(181, 142, 65, 0.35),
+      rgba(87, 85, 85, 0.35)
+    ),
+    url("../media/images/mobile/landing-hands-m.webp");
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.home-text-container > h1 {
+  letter-spacing: 3px;
+}
+
+.home-text-container > p {
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.home-text-container {
+  max-width: 360px;
+}
+
+.about--text > p {
+  margin-bottom: 2.9rem;
+}
+
+.about--img {
+  display: none;
+}
+
+.portrait-image {
+  border-radius: 4px;
+  margin-bottom: 1.375em;
+  /* filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25)); */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.portraits-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.portraits-container img:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.about-section {
+  position: relative;
+  scroll-margin-top: 106px;
+  background: url("../media/images/desktop/leaf--to-left-big.webp") left 30vw
+    bottom 0 no-repeat;
+  background-size: cover;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 4em;
+}
+
+.about--img > img {
+  border-radius: 4px;
+}
+
+.home-testimonials-section {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .home-section {
+    min-height: calc(100vh - 214px);
+    margin-top: 214px;
+  }
+}
+
+@media (min-width: 800px) {
+  .home-section {
+    min-height: calc(100vh - 273px);
+    margin-top: 273px;
+  }
+
+  /* .about-section {
+    scroll-margin-top: 140px;
+  } */
+
+  .home-text-container > h1,
+  .home-text-container > p {
+    letter-spacing: 5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-section {
+    min-height: calc(100vh - 270px);
+    margin-top: 270px;
+    background-image: linear-gradient(
+        rgba(181, 142, 65, 0.35),
+        rgba(87, 85, 85, 0.35)
+      ),
+      url("../media/images/desktop/hands-d.webp");
+    background-position: top;
+    background-size: cover;
+  }
+
+  .about-section {
+    scroll-margin-top: 195px;
+  }
+
+  .home-text-container {
+    max-width: 410px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about--img {
+    display: block;
+  }
+
+  .about--text {
+    width: 50%;
+  }
+
+  .contact--outer {
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-section--inner,
+  .contact-container {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .about-section {
+    background: url("../media/images/desktop/leaf--to-left-big.webp") left 55vw
+      bottom 0 no-repeat;
+    background-size: contain;
+  }
+}
+
+@media (min-width: 1900px) {
+  .about-section {
+    background: url("../media/images/desktop/leaf--to-left-big.webp") left 65vw
+      bottom 0 no-repeat;
+    background-size: contain;
+  }
+}
+
+html {
+  visibility: visible;
+  opacity: 1;
+}

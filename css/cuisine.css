@@ -1,0 +1,170 @@
+.cuisine-section {
+  margin-top: 182px;
+}
+
+.cuisine--filler__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cuisine--filler__quote {
+  font-size: 29px;
+}
+
+.cuisine--experience-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.cuisine--experience-list ul {
+  list-style: bengali;
+  margin-left: 1em;
+}
+
+.cuisine--img-landing img {
+  height: auto;
+  border-radius: 4px;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6em;
+  margin-top: 2.9rem;
+}
+
+.socials-cuisine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.media-scroller-section > .container {
+  padding: 2.75em 0 2.75em 1em;
+}
+
+.media-scroller {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+  grid-auto-columns: 65%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.media-element {
+  display: grid;
+  gap: 1rem;
+  /* padding: 1rem; */
+  /* background: grey; */
+  border-radius: 2px;
+  grid-template-rows: min-content;
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 1rem;
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
+}
+
+.media-element > img {
+  width: 100%;
+  /* aspect-ratio: 16/9; */
+  object-fit: cover;
+  height: auto;
+  border-radius: 4px;
+}
+
+.media-scroller-arrow {
+  position: absolute;
+  top: 0;
+  right: 1em;
+  border-radius: 16px;
+  padding: 0.7rem;
+  border: none;
+  cursor: pointer;
+  opacity: 100%;
+  transition: opacity 0.3s;
+  display: flex;
+  /* margin-top: -50px; */
+  transform: rotate(90deg);
+}
+
+.contact-section--inner > p {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 1.45rem;
+}
+
+.cuisine--filler__box-inner > p {
+  max-width: 550px;
+}
+
+/* .media-scroller-arrow-icon {
+  width: 1rem;
+  height: 1rem;
+  color: var();
+} */
+
+@media (min-width: 768px) {
+  .media-scroller {
+    grid-auto-columns: 40%;
+  }
+
+  .media-scroller-section > .container {
+    padding: 5.5em 0 5.5em 2em;
+  }
+}
+
+@media (min-width: 800px) {
+  .cuisine-section {
+    margin-top: 273px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* .cuisine-section > .container {
+    display: flex;
+    gap: 2em;
+  } */
+
+  .cuisine--experience-list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .media-scroller {
+    grid-auto-columns: 30%;
+    gap: 2em;
+  }
+
+  .media-scroller-section > .container {
+    padding: 5.5em 0 5.5em 4em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cuisine-section > .container {
+    display: flex;
+    gap: 2em;
+  }
+
+  .cuisine--filler__box {
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .media-scroller {
+    grid-auto-columns: 25%;
+  }
+}

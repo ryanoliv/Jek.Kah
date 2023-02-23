@@ -1,0 +1,65 @@
+.about-page__about-section {
+  margin-top: 145px;
+  background-image: linear-gradient(
+      rgba(56, 55, 55, 0.4),
+      rgba(87, 85, 85, 0.4)
+    ),
+    url("../media/images/mobile/about-landing-m.webp");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+
+  padding: 10rem 0;
+}
+
+.filler__photo {
+  background-image: linear-gradient(
+      rgba(56, 55, 55, 0.35),
+      rgba(87, 85, 85, 0.35)
+    ),
+    url("../media/images/mobile/filler-photo-sand-m.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.experience-list ul {
+  list-style: bengali;
+  padding-left: 2em;
+  text-align: left;
+}
+
+@media (min-width: 760px) {
+  .about-page__about-section {
+    margin-top: 214px;
+  }
+
+  .experience-list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 800px) {
+  .about-page__about-section {
+    margin-top: 273px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-page__about-section {
+    margin-top: 270px;
+    background-image: linear-gradient(
+        rgba(56, 55, 55, 0.4),
+        rgba(87, 85, 85, 0.4)
+      ),
+      url("../media/images/desktop/about-feet-sand-d.webp");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
