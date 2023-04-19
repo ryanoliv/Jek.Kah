@@ -50,7 +50,7 @@
 
 .media-scroller {
   display: grid;
-  gap: 1rem;
+  gap: 0.5rem;
   grid-auto-flow: column;
   grid-auto-columns: 65%;
   overflow-x: auto;
@@ -144,7 +144,7 @@
 
   .media-scroller {
     grid-auto-columns: 30%;
-    gap: 2em;
+    gap: 0.5em;
   }
 
   .media-scroller-section > .container {

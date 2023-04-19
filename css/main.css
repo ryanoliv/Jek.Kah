@@ -269,7 +269,7 @@ body {
 
 .header--logo {
   margin-inline: auto;
-  width: 460px;
+  width: 560px;
   height: auto;
   transition: width 0.2s linear;
 }
@@ -512,7 +512,7 @@ p {
 .testimonials--outer {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   gap: 1.5em;
 }
@@ -1012,7 +1012,7 @@ footer {
   .testimonials--outer {
     flex-direction: row;
     align-items: flex-start;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
   .box {
