@@ -49,9 +49,9 @@ body {
 }
 
 .home-section {
-  min-height: calc(100vh - 130px);
+  min-height: calc(100vh - 83px);
   /* min-height: 90vh; */
-  margin-top: 130px;
+  margin-top: 83px;
   background-image: linear-gradient(
       rgba(181, 142, 65, 0.35),
       rgba(87, 85, 85, 0.35)
@@ -76,7 +76,7 @@ body {
 }
 
 .home-text-container {
-  max-width: 360px;
+  max-width: 365px;
 }
 
 .about--text > p {
@@ -89,7 +89,7 @@ body {
 
 .portrait-image {
   border-radius: 4px;
-  margin-bottom: 1.375em;
+  /* margin-bottom: 1.375em; */
   /* filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25)); */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -97,7 +97,7 @@ body {
 .portraits-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
 }
 
@@ -130,16 +130,16 @@ body {
 
 @media (min-width: 768px) {
   .home-section {
-    min-height: calc(100vh - 214px);
-    margin-top: 214px;
+    min-height: calc(100vh - 134px);
+    margin-top: 134px;
   }
 }
 
 @media (min-width: 800px) {
-  .home-section {
-    min-height: calc(100vh - 273px);
+  /* .home-section {
+    min-height: calc(100vh - 174px);
     margin-top: 273px;
-  }
+  } */
 
   /* .about-section {
     scroll-margin-top: 140px;
@@ -153,8 +153,8 @@ body {
 
 @media (min-width: 1024px) {
   .home-section {
-    min-height: calc(100vh - 270px);
-    margin-top: 270px;
+    min-height: calc(100vh - 174px);
+    margin-top: 174px;
     background-image: linear-gradient(
         rgba(181, 142, 65, 0.35),
         rgba(87, 85, 85, 0.35)

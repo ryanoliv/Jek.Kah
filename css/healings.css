@@ -1,5 +1,5 @@
 .healings-section {
-  margin-top: 182px;
+  margin-top: 83px;
 }
 
 .healings--grid {
@@ -26,12 +26,18 @@
   max-width: 310px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   .healings-section {
-    margin-top: 273px;
+    margin-top: 134px;
   }
 
   .healings--grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .healings-section {
+    margin-top: 174px;
   }
 }

@@ -269,7 +269,8 @@ body {
 
 .header--logo {
   margin-inline: auto;
-  width: 560px;
+  /* width: 360px; */
+  max-width: 215px;
   height: auto;
   transition: width 0.2s linear;
 }
@@ -825,7 +826,7 @@ footer {
 /* CONTACT */
 
 .contacts-section {
-  margin-top: 182px;
+  margin-top: 83px;
 }
 
 .contact-section--inner {
@@ -842,7 +843,11 @@ footer {
 
 @media (min-width: 768px) {
   .header {
-    padding: 2em;
+    padding: 1.5rem;
+  }
+
+  .header--logo {
+    max-width: 360px;
   }
 
   .container {
@@ -867,6 +872,10 @@ footer {
     padding: 2em;
     margin: 0 auto;
     max-width: 450px;
+  }
+
+  .contacts-section {
+    margin-top: 134px;
   }
 }
 
@@ -893,7 +902,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 2em;
+    margin-top: 1rem;
   }
 
   .dropdown-menu > .drop-down-link + .sub-menu {
@@ -924,14 +933,14 @@ footer {
 
   .events-section,
   .contacts-section {
-    margin-top: 273px;
+    margin-top: 174px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   :root {
     --fs-900: 3rem;
-    --fs-800: 2.625rem;
+    --fs-800: 2.8rem;
     --fs-700: 2.25rem;
     --fs-600: 1.5rem;
     --fs-500: 1.25rem;
@@ -1045,6 +1054,12 @@ footer {
   .filler--text {
     font-size: var(--fs-400);
     text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts-section {
+    margin-top: 174px;
   }
 }
 

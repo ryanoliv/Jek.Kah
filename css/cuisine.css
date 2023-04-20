@@ -1,5 +1,5 @@
 .cuisine-section {
-  margin-top: 182px;
+  margin-top: 83px;
 }
 
 .cuisine--filler__box {
@@ -122,13 +122,17 @@
   .media-scroller-section > .container {
     padding: 5.5em 0 5.5em 2em;
   }
-}
 
-@media (min-width: 800px) {
   .cuisine-section {
-    margin-top: 273px;
+    margin-top: 134px;
   }
 }
+
+/* @media (min-width: 800px) {
+  .cuisine-section {
+    margin-top: 174px;
+  }
+} */
 
 @media (min-width: 1024px) {
   /* .cuisine-section > .container {
@@ -166,5 +170,9 @@
 
   .media-scroller {
     grid-auto-columns: 25%;
+  }
+
+  .cuisine-section {
+    margin-top: 174px;
   }
 }

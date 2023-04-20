@@ -1,5 +1,5 @@
 .about-page__about-section {
-  margin-top: 145px;
+  margin-top: 83px;
   background-image: linear-gradient(
       rgba(56, 55, 55, 0.4),
       rgba(87, 85, 85, 0.4)
@@ -35,7 +35,7 @@
 
 @media (min-width: 760px) {
   .about-page__about-section {
-    margin-top: 214px;
+    margin-top: 134px;
   }
 
   .experience-list {
@@ -44,15 +44,15 @@
   }
 }
 
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
   .about-page__about-section {
-    margin-top: 273px;
+    margin-top: 134px;
   }
-}
+} */
 
 @media (min-width: 1024px) {
   .about-page__about-section {
-    margin-top: 270px;
+    margin-top: 174px;
     background-image: linear-gradient(
         rgba(56, 55, 55, 0.4),
         rgba(87, 85, 85, 0.4)

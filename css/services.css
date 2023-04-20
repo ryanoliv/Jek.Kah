@@ -1,6 +1,6 @@
 .services-section {
   /* min-height: calc(100vh + 182px); */
-  margin-top: 182px;
+  margin-top: 83px;
   background: url("../media/images/desktop/leaf--to-left-big.webp") left 30vw
     top 60vh no-repeat;
   background-size: contain;
@@ -17,10 +17,10 @@
   margin-bottom: 1.45rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   .services-section {
     /* min-height: calc(100vh + 182px); */
-    margin-top: 273px;
+    margin-top: 134px;
   }
 
   .services-img-container,
@@ -32,6 +32,6 @@
 @media (min-width: 1024px) {
   .services-section {
     /* min-height: calc(100vh + 182px); */
-    margin-top: 270px;
+    margin-top: 174px;
   }
 }
