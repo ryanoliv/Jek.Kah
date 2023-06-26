@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      html {
+        visibility: hidden;
+        opacity: 0;
+      }
+    </style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,6 +62,24 @@
     <link rel="stylesheet" href="/css/loader.css" />
     <link
       rel="stylesheet"
+      href="./css/reset.css"
+      media="print"
+      onload="this.media='all'; this.onload=null;"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/main.css"
+      media="print"
+      onload="this.media='all'; this.onload=null;"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/home.css"
+      media="print"
+      onload="this.media='all'; this.onload=null;"
+    />
+    <link
+      rel="stylesheet"
       href="/css/main.css"
       media="print"
       onload="this.media='all'; this.onload=null;"
@@ -91,38 +115,547 @@
 
     <title>Jek.kah | Jessica Réa | Healing and Empowerment</title>
   </head>
-  <body class="pre-load_body">
-    <h1>
+  <body>
+    <header class="header">
+      <div class="header__nav-logo">
+        <a href="#"
+          ><img
+            id="header-logo"
+            class="header--logo"
+            src="/media/logos/JK-cropped.png"
+            alt="Jek.Kah Logo"
+        /></a>
+      </div>
+      <!-- MOBILE NAV -->
+      <nav class="navbar">
+        <div class="nav-container">
+          <input class="checkbox" type="checkbox" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li>
+              <div class="dropdown-menu" data-dropdown>
+                <a class="drop-down-link" href="#!" data-dropdown-button
+                  >Offerings
+                  <img
+                    class="down-arrow"
+                    src="/media/icons/down-arrow.svg"
+                    alt="Down Arrow"
+                /></a>
+                <ul class="sub-menu">
+                  <li><a href="/services.html">All Offerings</a></li>
+                  <li><a href="/healings.html">Healings</a></li>
+                  <!-- <li>
+                    <a href="/coaching&guidance.html">Coaching & Guidance</a>
+                  </li> -->
+                  <li>
+                    <a href="/max-meditation-system.html"
+                      >Max Meditation System™</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/events&workshops.html">Events & Workshops</a>
+                  </li>
+                  <li><a href="/testimonials.html">Testimonials</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="/cuisine.html">Cuisine</a></li>
+            <!-- <li><a href="/events.html">Events</a></li> -->
+            <!-- <li><a href="/contact.html">Bookings</a></li> -->
+            <li>
+              <div class="dropdown-menu" data-dropdown>
+                <a class="drop-down-link" href="#!" data-dropdown-button
+                  >Bookings
+                  <img
+                    class="down-arrow"
+                    src="/media/icons/down-arrow.svg"
+                    alt="Down Arrow"
+                /></a>
+                <ul class="sub-menu">
+                  <li><a href="/rates.html">Rates</a></li>
+                  <li><a href="/cvs.html">CV's</a></li>
+                  <li>
+                    <a href="/contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- DESKTOP NAV -->
+      <nav class="desktop-navbar">
+        <ul class="desktop-menu-items">
+          <li><a href="#">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li>
+            <div class="dropdown-menu" data-dropdown>
+              <a class="drop-down-link" href="#!" data-dropdown-button
+                >Offerings
+                <img
+                  class="down-arrow"
+                  src="/media/icons/down-arrow.svg"
+                  alt="Down Arrow"
+              /></a>
+              <ul class="sub-menu">
+                <li><a href="/services.html">All Offerings</a></li>
+                <li><a href="/healings.html">Healings</a></li>
+                <!-- <li>
+                  <a href="/coaching&guidance.html">Coaching & Guidance</a>
+                </li> -->
+                <li>
+                  <a href="/max-meditation-system.html"
+                    >Max Meditation System™</a
+                  >
+                </li>
+                <li><a href="/events&workshops.html">Events & Workshops</a></li>
+                <li><a href="/testimonials.html">Testimonials</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="/cuisine.html">Cuisine</a></li>
+          <!-- <li><a href="/events.html">Events</a></li> -->
+          <!-- <li><a href="/contact.html">Bookings</a></li> -->
+          <li>
+            <div class="dropdown-menu" data-dropdown>
+              <a class="drop-down-link" href="#!" data-dropdown-button
+                >Bookings
+                <img
+                  class="down-arrow"
+                  src="/media/icons/down-arrow.svg"
+                  alt="Down Arrow"
+              /></a>
+              <ul class="sub-menu">
+                <li><a href="/rates.html">Rates</a></li>
+                <li><a href="/cvs.html">CV's</a></li>
+                <li>
+                  <a href="/contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="home-section">
+      <div class="container">
+        <div class="home-text-container t-align">
+          <h1 class="lighter text-shadow">Feel Empowered</h1>
+          <p class="lighter">
+            Know and heal yourself through activation, energetic healing &
+            spiritual guidance.
+          </p>
+          <a href="/services.html" class="btn btn__secondary">Read More</a>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about-section">
+      <div class="container about-container">
+        <div class="about--text t-align center" data-aos="fade-up">
+          <h2>Jessica Réa</h2>
+          <p class="justified">
+            There are layers to healing; it isn't simply a quick fix. It is a
+            journey.
+            <br />
+            <br />
+            Jessica is an International Life Activation Practitioner & Healer.
+            She offers activations,
+            <a class="link darker" href="/healings.html">healings</a>, retreats,
+            workshops, coaching & meditations globally (in person & online).
+            <!-- Jessica is a Life Activation Practitioner, Healer & Coach. She
+            offers a variety of a
+            <a class="link darker" href="/healings.html">healings</a>,
+            activations, meditations & coaching both online as well as in
+            person. -->
+            <br />
+            <br />
+            The core of her practice is The
+            <a class="link darker" href="/life-activation.html">
+              Life Activation</a
+            >
+            which is a powerful healing modality that enables you to access your
+            potential in life and allows you to see and progress in your journey
+            of growth. It reawakens the dormant parts of your DNA and
+            reintroduces you to yourself. The activation brings up all elements
+            within yourself that need to be illuminated. A Trajectory shift - A
+            life alignment - an empowerment.
+
+            <!-- The core of her practice is the immersive
+            <a class="link darker" href="/life-activation.html"
+              >Life Activation</a
+            >
+            that reawakens the dormant parts of the DNA and reintroduces you to
+            yourself. This healing activation brings up all elements within
+            ourselves we need to be illuminated in our life. With guidance from
+            Jessica, you can shine light into your shadow, heal from within, and
+            reclaim your power on your healing journey. She will do her utmost
+            best to help you navigate through any blockages in an effective
+            timeframe. Her love for energy work stems from her observation and
+            experience of how effective energy can truly be in one's life. -->
+            <br />
+            <br />
+            Through activations & energy you are able to release blockages &
+            limiting beliefs that are holding you back from living your desired
+            reality. Receiving healings, activations & spiritual guidance allows
+            you shift the resistance holding you back from your full potential.
+            All of Jessica's services allow you to integrate new energy and
+            empower yourself to take the right steps forward in living a
+            purposeful, joyful & empowered life.
+            <!-- <br />
+            <br />
+            Present day, It has become common for many people to be disconnected
+            from their true selves, past traumas or current events can uproot
+            even the strongest mind with ideas of disillusionment and
+            hopelessness resurfacing negative thought patterns and unhealthy
+            habits. This is why Energetic healing & activations are so
+            important. They create shifts within the mind, body & soul as well
+            as shape our future effectively.
+            <br />
+            <br />
+            With guidance from Jessica, you can shine light into your shadow,
+            heal from within, and reclaim your power on your healing journey.
+            She will help you navigate through blockages with an authentic &
+            effective approach.
+            <br />
+            <br />
+            Her love for energy work stems from her own healing journey & her
+            personal experience of how effective energy is. She heals, teaches &
+            coaches from experience as she battled with addiction from childhood
+            - she has turned her life into her desired reality & never given up
+            - That’s why she is here to guide you into achieving your desired
+            reality living & empowered life. -->
+            <br />
+            <br />
+          </p>
+          <a href="/about.html" class="btn btn__primary">About Jessica</a>
+        </div>
+        <div class="about--img" data-aos="fade-up">
+          <img
+            src="/media/images/desktop/Jess-home--about.webp"
+            alt="Jessica Réa"
+            width="500"
+            height="750"
+            decoding="async"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- <section class="filler t-align">
+      <div class="container">
+        <p class="filler--text no-margin justified">
+          Jessica is a healer and teacher of self-empowerment & self-love. In
+          addition to the energy work she incorporates into her healings and
+          coaching, she teaches multiple ways in which you can learn to heal
+          yourself, face any attachments and traumas, and attract the life of
+          your desires through creating a relationship with your true self.
+        </p>
+      </div>
+    </section> -->
+    <section class="portraits-section">
+      <div class="container center">
+        <div class="portraits-container">
+          <img
+            class="portrait-image"
+            src="/media/images/mobile/jess-home-portrait-1-m.webp"
+            alt="Jessica Réa Portrait"
+            width="288"
+            height="433"
+            decoding="async"
+            loading="lazy"
+            data-aos="fade-up"
+          />
+          <img
+            class="portrait-image"
+            src="/media/images/mobile/jess-home-portrait-2-m.webp"
+            alt="Jessica Réa Portrait"
+            width="288"
+            height="433"
+            decoding="async"
+            loading="lazy"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          />
+          <img
+            class="portrait-image"
+            src="/media/images/mobile/jess-home-portrait-3-m.webp"
+            alt="Jessica Réa Portrait"
+            width="288"
+            height="433"
+            decoding="async"
+            loading="lazy"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="home-testimonials-section">
+      <img
+        class="leaf--bg-image right"
+        src="/media/images/mobile/leaf--to-right.webp"
+        alt="Leaf Faded Background Image"
+        width="550"
+        height="565"
+        decoding="async"
+        loading="lazy"
+      />
+      <div class="container">
+        <div class="home-testimonials--container t-align">
+          <h2>Testimonials</h2>
+          <div class="testimonials--outer">
+            <div class="testimonials--card center">
+              <img
+                class="testimonials-image"
+                src="/media/images/testimonials/carlotta.webp"
+                alt="Jessica Réa Portrait"
+                width="50"
+                height="50"
+                decoding="async"
+                loading="lazy"
+              />
+              <p class="testimonials--name">Carlotta - Personal Trainer</p>
+              <p class="testimonials--healing">Life Activation</p>
+              <p class="testimonials--text">
+                "I experienced strong physical and mental shifts both during the
+                session and after. Since then I have been so much more aware of
+                myself and my surroundings. I feel more in tune with myself and
+                my actions, being able to be more present as well as finding a
+                lot more time to be still."
+              </p>
+            </div>
+            <div class="testimonials--card center">
+              <img
+                class="testimonials-image"
+                src="/media/images/testimonials/cassidy.webp"
+                alt="Jessica Réa Portrait"
+                width="50"
+                height="50"
+                decoding="async"
+                loading="lazy"
+              />
+              <p class="testimonials--name">Cassidy - YouTuber & Influencer</p>
+              <p class="testimonials--healing">Intuitive Coaching & Reiki</p>
+              <p class="testimonials--text">
+                "During my sessions, Jess allowed me to take up space, and
+                afterwards, I felt like I was able to receive her tools, which
+                would equip me to take on struggles in the future."
+              </p>
+            </div>
+            <div class="testimonials--card center">
+              <img
+                class="testimonials-image"
+                src="/media/images/testimonials/sara.webp"
+                alt="Jessica Réa Portrait"
+                width="50"
+                height="50"
+                decoding="async"
+                loading="lazy"
+              />
+              <p class="testimonials--name">Sara - Social Media Manager</p>
+              <p class="testimonials--healing">In-person & Distant Reiki</p>
+              <p class="testimonials--text">
+                "Jess provides a safe space in which you feel comfortable to
+                speak about any issue that is in your heart and soul. She
+                provides insightful guidance and helpful tips moving forward. I
+                am always left feeling at peace after a session with her."
+              </p>
+            </div>
+          </div>
+          <a href="/testimonials.html" class="btn btn__primary"
+            >More Testimonials</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="contact-section">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact--outer">
+          <div class="contact-section--inner">
+            <h3>Get in touch with Jessica today if you’re looking to:</h3>
+            <ul>
+              <li>Heal through the past</li>
+              <li>
+                Cultivate a deeper relationship with yourself in the present
+              </li>
+              <li>
+                Take the next step to embody your truest and highest self for
+                the future
+              </li>
+            </ul>
+            <h3>
+              Feel free to contact her here for one of her
+              <a href="/services.html" class="btn btn__tertiary">offerings</a>.
+            </h3>
+            <div class="socials flex">
+              <a
+                href="mailto:jessicareareiki@gmail.com"
+                class="social-btn"
+                target="_blank"
+                rel="nooppener noreferrer"
+                ><img
+                  src="/media/socials/email.svg"
+                  alt="Jek.kah Email"
+                  width="38"
+                  height="35"
+                  decoding="async"
+                  loading="lazy"
+              /></a>
+              <a
+                href="https://wa.me/447376137617"
+                class="social-btn"
+                target="_blank"
+                rel="nooppener noreferrer"
+                ><img
+                  src="/media/socials/whatsapp.svg"
+                  alt="Jek.kah WhatsApp"
+                  width="35"
+                  height="35"
+                  decoding="async"
+                  loading="lazy"
+              /></a>
+              <a
+                href="https://www.instagram.com/jek.kah.healing/"
+                class="social-btn"
+                target="_blank"
+                rel="nooppener noreferrer"
+                ><img
+                  src="/media/socials/insta.svg"
+                  alt="Jek.kah Instagram"
+                  width="35"
+                  height="35"
+                  decoding="async"
+                  loading="lazy"
+              /></a>
+              <a
+                href="https://www.pinterest.com/JekkahHealing/"
+                class="social-btn"
+                target="_blank"
+                rel="nooppener noreferrer"
+                ><img
+                  src="/media/socials/pinterest.svg"
+                  alt="Jek.kah Pinterest"
+                  width="35"
+                  height="35"
+                  decoding="async"
+                  loading="lazy"
+              /></a>
+              <a
+                href="https://open.spotify.com/user/2xut889pdqyo8pegk1gbgi2sz?si=3118fab1317341a2"
+                class="social-btn"
+                target="_blank"
+                rel="nooppener noreferrer"
+                ><img
+                  src="/media/socials/spotify.svg"
+                  alt="Jek.kah Spotify"
+                  width="35"
+                  height="35"
+                  decoding="async"
+                  loading="lazy"
+              /></a>
+            </div>
+          </div>
+          <div id="form" class="contact-container">
+            <h2>Say Hello</h2>
+            <form
+              action="https://formsubmit.co/67c9eaac27dc4e54297913c77bec5085"
+              method="POST"
+            >
+              <div class="form-input">
+                <div class="user-box">
+                  <input type="text" id="name" name="name" required />
+                  <label for="name">Name</label>
+                </div>
+                <div class="user-box">
+                  <input type="text" id="surname" name="surname" required />
+                  <label for="surname">Surname</label>
+                </div>
+              </div>
+              <div class="form-input">
+                <div class="user-box">
+                  <input type="text" id="email" name="email" required />
+                  <label for="email">Email</label>
+                </div>
+                <div class="user-box">
+                  <input type="text" id="subject" name="subject" required />
+                  <label for="subject">Subject</label>
+                </div>
+              </div>
+              <div class="user-box">
+                <input type="text" id="message" name="message" required />
+                <label for="message">Message</label>
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://www.jekkahhealing.com/thanks.html"
+                />
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="New Message From Jekkah Healing"
+                />
+                <input type="text" name="_honey" style="display: none" />
+              </div>
+              <button class="btn btn__primary" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <button class="back-to-top hidden" aria-label="Back to Top Button">
       <svg
-        id="logo"
-        width="200"
-        height="200"
-        viewBox="0 0 200 200"
-        fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        class="back-to-top-icon"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
       >
         <path
-          d="M100 195C152.467 195 195 152.467 195 100C195 47.5329 152.467 5 100 5C47.5329 5 5 47.5329 5 100C5 152.467 47.5329 195 100 195ZM199.286 100C199.286 154.834 154.834 199.286 100 199.286C45.166 199.286 0.714286 154.834 0.714286 100C0.714286 45.166 45.166 0.714286 100 0.714286C154.834 0.714286 199.286 45.166 199.286 100Z"
-          stroke="#B58E41"
-          stroke-width="1.42857"
-        />
-        <path
-          d="M74.3859 127.096L74.3487 126.984L74.2774 126.89C73.9534 126.463 73.631 125.759 73.339 124.719C73.05 123.69 72.804 122.381 72.6052 120.782C72.208 117.586 72.0069 113.293 72.0067 107.891L72.6633 74.0767C72.9616 73.2058 73.5969 71.6206 74.5809 69.3008C75.0578 68.2732 75.4218 67.4249 75.6682 66.7614C75.902 66.1319 76.0698 65.5696 76.0698 65.1675C76.0698 63.8864 75.426 62.6905 74.3232 61.5877L74.114 61.3785H73.8181H42.9607H42.425L42.275 61.8928L41.5063 64.5283L41.1946 65.5969L42.296 65.435C44.7581 65.0729 46.9921 64.8935 49.0004 64.8935C52.3679 64.8935 55.062 65.4587 57.124 66.5412C59.1704 67.6156 60.6285 69.2165 61.5168 71.3678C62.0242 72.6204 62.4289 74.6919 62.7021 77.6422C62.9737 80.5751 63.1107 84.3184 63.1109 88.8782L62.4524 115.219C62.4523 115.22 62.4523 115.221 62.4523 115.222C62.2347 122.068 60.7862 127.08 58.2114 130.368C55.6636 133.621 51.9372 135.282 46.914 135.282C44.1827 135.282 42.1757 134.994 40.8371 134.466L38.668 133.381C38.1351 133.115 37.6556 132.913 37.2361 132.787C36.8303 132.665 36.4135 132.594 36.0349 132.657L35.4381 132.756V133.361V135.777V136.157L35.7527 136.369C38.815 138.436 42.4362 139.456 46.5846 139.456C51.0628 139.456 57.1053 137.645 64.6622 134.125C65.4912 133.781 67.0151 133.318 69.2718 132.736C71.6117 132.151 73.2913 131.623 74.2474 131.145L74.6422 130.948V130.506C74.6422 129.656 74.6238 128.952 74.5856 128.398C74.5488 127.864 74.4904 127.409 74.3859 127.096Z"
-          stroke="#B58E41"
-          stroke-width="1.42857"
-        />
-        <path
-          d="M164.074 136.833L164.556 136.351L164.097 135.847C158.902 130.14 154.834 125.779 151.898 122.769C150.081 120.806 146.8 116.979 142.047 111.274C138.794 107.327 136.365 104.197 134.753 101.879C133.946 100.718 133.354 99.7744 132.966 99.0419C132.772 98.6756 132.635 98.3741 132.549 98.1329C132.459 97.8833 132.438 97.7389 132.438 97.6742C132.438 97.5464 132.505 97.2931 132.801 96.8874C133.089 96.4929 133.544 96.0217 134.19 95.4733C135.479 94.3781 137.442 93.0486 140.1 91.4829C147.706 87.0946 152.764 83.9229 155.226 81.9829L155.23 81.9804C160.711 77.6103 163.625 73.1441 163.625 68.5738C163.625 66.7335 163.28 65.1666 162.535 63.9236C161.573 62.3204 160.273 61.3194 158.629 61.0598L158.601 61.0554L158.573 61.0532C157.529 60.9729 155.807 61.1332 153.467 61.4988C150.632 61.9349 148.292 62.1492 146.438 62.1492C144.29 62.1492 142.141 61.9344 139.99 61.5042L138.643 61.2348L139.196 62.4923C140.03 64.3872 141.059 65.784 142.337 66.5508L142.428 66.6054L142.532 66.6312C144.578 67.1427 146.624 67.618 148.67 68.0568C152.011 69.1301 153.301 70.6093 153.301 72.3074C153.301 73.8475 152.61 75.5906 151.09 77.5527C149.572 79.5116 147.269 81.635 144.151 83.9194C139.661 87.1778 133.776 90.5227 126.482 93.9511C123.264 95.4138 120.01 96.8765 116.719 98.3392L116.664 98.3633L116.615 98.396C113.2 100.652 110.484 102.535 108.474 104.043L107.952 74.0654C108.19 73.3619 108.722 71.8729 109.553 69.5884C109.922 68.5925 110.203 67.76 110.393 67.0953C110.577 66.4511 110.695 65.9004 110.695 65.499C110.695 64.1698 110.386 63.0375 109.572 62.3259L109.37 62.1492H109.102H97.1325H96.4182V62.8635V67.1462C96.4182 67.5445 96.543 67.9612 96.7282 68.3727C96.9167 68.7916 97.1892 69.2516 97.5335 69.749L97.5413 69.7602L97.5494 69.771C97.8643 70.1909 98.0845 70.5375 98.2232 70.8149C98.3677 71.1039 98.3949 71.2613 98.3949 71.3191V126.116C98.3949 126.254 98.3182 126.668 98.0929 127.457C97.8784 128.208 97.5538 129.218 97.1167 130.493C96.6758 131.742 96.3414 132.763 96.1163 133.551C95.8995 134.31 95.7593 134.933 95.7593 135.34C95.7593 136.621 96.0802 137.714 96.8471 138.481L97.0563 138.69H97.3521H109.212H109.926V137.975V134.901V134.747L109.863 134.608C108.564 131.72 107.785 129.191 107.504 127.013L107.503 127L107.501 126.987C107.366 126.178 107.291 124.229 107.291 121.064C107.291 116.84 107.694 113.803 108.449 111.882L108.453 111.872L108.456 111.862C109.695 108.422 112.235 105.925 116.172 104.379L116.188 104.372L116.204 104.365C117.608 103.733 118.824 103.44 119.864 103.44C120.461 103.44 121.26 103.674 122.286 104.237C123.303 104.795 124.491 105.648 125.851 106.81C128.572 109.134 131.92 112.642 135.899 117.352C139.447 121.558 142.157 124.888 144.031 127.345C144.969 128.574 145.692 129.577 146.205 130.358C146.726 131.151 146.988 131.652 147.069 131.91C147.477 133.485 147.549 135.212 147.269 137.102L147.173 137.753L147.814 137.902C150.077 138.431 152.733 138.69 155.773 138.69C157.848 138.69 159.577 138.551 160.944 138.263C162.294 137.977 163.38 137.528 164.074 136.833Z"
-          stroke="#B58E41"
-          stroke-width="1.42857"
-        />
-        <path
-          d="M87.9018 104.981L87.9019 104.981L87.9062 104.979C88.7925 104.438 89.5009 103.72 90.0225 102.831C90.5708 101.93 90.8447 100.937 90.8447 99.8689C90.8447 98.2537 90.2579 96.8517 89.1067 95.7005C87.9555 94.5493 86.5535 93.9625 84.9383 93.9625C83.3231 93.9625 81.921 94.5493 80.7698 95.7005C79.6186 96.8517 79.0318 98.2537 79.0318 99.8689C79.0318 101.484 79.6186 102.886 80.7698 104.037C81.921 105.189 83.3231 105.775 84.9383 105.775C86.0196 105.775 87.0136 105.514 87.9018 104.981Z"
-          stroke="#B58E41"
-          stroke-width="1.42857"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M7 11l5-5m0 0l5 5m-5-5v12"
         />
       </svg>
-    </h1>
-    <script src="./js/loader.js"></script>
+    </button>
+    <footer class="footer">
+      <div class="footer--inner">
+        <img
+          class="jk--logo"
+          src="/media/logos/jk-logo-footer.webp"
+          alt="Jek.kah Logo"
+          width="50"
+          height="50"
+          decoding="async"
+          loading="lazy"
+        />
+        <p class="footer-text">
+          &copy; Handcoded by
+          <a href="https://www.ryanoliver.dev/" class="website-link"
+            >Ryan Oliver</a
+          >
+          2022. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+    <script defer src="./js/fadeIn.js"></script>
+    <script defer src="./js/nav-shrink.js"></script>
+    <script defer src="./js/dropdown.js"></script>
+    <script defer src="./js/back-to-top.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 150,
+        duration: 1200,
+        once: true,
+      });
+    </script>
   </body>
 </html>
