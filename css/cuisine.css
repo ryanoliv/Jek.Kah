@@ -35,6 +35,9 @@
   flex-wrap: wrap;
   gap: 6em;
   margin-top: 2.9rem;
+
+  background-color: var(--clr-secondary);
+  padding: 2rem;
 }
 
 .socials-cuisine {
