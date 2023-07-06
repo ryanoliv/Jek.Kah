@@ -18,7 +18,7 @@
 }
 
 .services--grid {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .services-img {
@@ -26,6 +26,8 @@
   border-radius: 4px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   margin-bottom: 1.45rem;
+
+  max-width: 350px;
 }
 
 .services--box {

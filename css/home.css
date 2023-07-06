@@ -82,6 +82,7 @@ body {
 .about--text > p {
   margin-bottom: 2.9rem;
   max-width: 500px;
+  letter-spacing: 0.5px;
 }
 
 .about--img {
