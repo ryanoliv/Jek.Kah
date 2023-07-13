@@ -692,8 +692,8 @@ footer {
 }
 
 .services--box {
-  padding: 4em 0;
-  width: 100%;
+  /* padding: 4em 0; */
+  width: fit-content;
   position: relative;
 }
 
