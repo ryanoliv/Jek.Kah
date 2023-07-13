@@ -920,7 +920,7 @@ td {
   }
 
   .container {
-    padding: 5.5em 2em;
+    padding: 5.5em 1.5em;
   }
 
   .nav-container .hamburger-lines,
@@ -1025,7 +1025,7 @@ td {
   }
 
   .container {
-    padding: 5.5em 4em;
+    padding: 5.5em 2em;
   }
 
   h3 {
@@ -1141,6 +1141,12 @@ td {
   td {
     padding: 1rem 0.7rem;
     font-size: 16px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .container {
+    padding: 5.5em 4em;
   }
 }
 

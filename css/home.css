@@ -166,12 +166,25 @@ body {
     background-size: cover;
   }
 
+  .about--img {
+    display: block;
+  }
+
   .about-section {
     scroll-margin-top: 195px;
   }
 
   .home-text-container {
     max-width: 410px;
+  }
+
+  .contact--outer {
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-container {
+    width: 75%;
   }
 }
 
@@ -186,11 +199,6 @@ body {
 
   .about--text {
     width: 50%;
-  }
-
-  .contact--outer {
-    display: flex;
-    align-items: center;
   }
 
   .contact-section--inner,
