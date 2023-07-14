@@ -1,6 +1,6 @@
 .services-section {
   /* min-height: calc(100vh + 182px); */
-  margin-top: 83px;
+  margin-top: 84px;
   background: url("../media/images/desktop/leaf--to-left-big.webp") left 30vw
     top 60vh no-repeat;
   background-size: contain;
@@ -83,7 +83,7 @@
 @media (min-width: 768px) {
   .services-section {
     /* min-height: calc(100vh + 182px); */
-    margin-top: 134px;
+    margin-top: 207px;
   }
 
   .services--grid {
@@ -100,10 +100,9 @@
 }
 
 @media (min-width: 1024px) {
-  .services-section {
-    /* min-height: calc(100vh + 182px); */
+  /* .services-section {
     margin-top: 174px;
-  }
+  } */
 
   .services--grid {
     grid-template-columns: repeat(3, 1fr);

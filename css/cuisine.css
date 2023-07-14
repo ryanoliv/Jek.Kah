@@ -138,10 +138,9 @@
 } */
 
 @media (min-width: 1024px) {
-  /* .cuisine-section > .container {
+  .cuisine-section > .container {
     display: flex;
-    gap: 2em;
-  } */
+  }
 
   .cuisine--experience-list {
     flex-direction: row;
