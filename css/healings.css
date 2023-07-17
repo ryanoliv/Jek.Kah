@@ -1,5 +1,5 @@
 .healings-section {
-  margin-top: 83px;
+  margin-top: 84px;
 }
 
 .healings--grid {
@@ -7,6 +7,13 @@
   grid-template-columns: repeat(1, 1fr);
   gap: 2em;
   margin-top: 2.9rem;
+}
+.healings-landing {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 84px);
+  margin-bottom: 3rem;
 }
 
 .healing-item {
@@ -20,6 +27,9 @@
 
 .healing-item img {
   margin-bottom: 1.45rem;
+  border-radius: 4px;
+  /* height: 100%;
+  width: 100%; */
 }
 
 .healing-text {
@@ -28,7 +38,11 @@
 
 @media (min-width: 768px) {
   .healings-section {
-    margin-top: 134px;
+    margin-top: 207px;
+  }
+
+  .healings-landing {
+    height: calc(100vh - 207px);
   }
 
   .healings--grid {
@@ -36,10 +50,16 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .healings-section {
-    margin-top: 174px;
+/* @media (min-width: 920px) {
+  .healing-item img {
+    height: unset;
   }
+} */
+
+@media (min-width: 1200px) {
+  /* .healings-section {
+    margin-top: 207px;
+  } */
 
   .healings--grid {
     grid-template-columns: repeat(3, 1fr);
