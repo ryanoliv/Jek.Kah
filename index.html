@@ -426,7 +426,10 @@
         loading="lazy"
       />
       <div class="container">
-        <div class="home-testimonials--container t-align">
+        <div
+          class="home-testimonials--container t-align"
+          style="overflow: hidden"
+        >
           <h2>Testimonials</h2>
           <div class="testimonials--outer">
             <p class="carousel-btn prev">&#8249;</p>
@@ -1317,6 +1320,34 @@
         updateVisibleIndicators();
       }
 
+      // Function to update the flex property of testimonials cards based on screen width
+      function updateFlexProperty() {
+        if (window.innerWidth < 800) {
+          testimonialsCards.forEach((card) => {
+            card.style.flex = "1 0 100%";
+          });
+        } else if (window.innerWidth < 1250) {
+          testimonialsCards.forEach((card) => {
+            card.style.flex = "1 0 50%";
+          });
+        } else {
+          testimonialsCards.forEach((card) => {
+            card.style.flex = "1 0 33.33%";
+          });
+        }
+      }
+
+      // Function to automatically move to the next slide after 5 seconds
+      function autoSlide() {
+        nextSlide();
+      }
+
+      // Call the function to set the initial flex property on page load
+      updateFlexProperty();
+
+      // Add event listener for the resize event to update the flex property
+      window.addEventListener("resize", updateFlexProperty);
+
       // Create initial visible indicators
       updateVisibleIndicators();
 
@@ -1331,6 +1362,22 @@
       document
         .querySelector(".carousel-btn.prev")
         .addEventListener("click", prevSlide);
+
+      // Start the automatic slide function
+      const slideInterval = setInterval(autoSlide, 5000);
+
+      // Function to stop the automatic slide when user interacts with the carousel
+      function stopSlideInterval() {
+        clearInterval(slideInterval);
+      }
+
+      // Add event listeners to the carousel container for mouse events
+      testimonialsContainer.addEventListener("mouseenter", stopSlideInterval);
+      testimonialsContainer.addEventListener("mouseleave", () => {
+        // Restart the automatic slide when the mouse leaves the carousel
+        clearInterval(slideInterval);
+        slideInterval = setInterval(autoSlide, 5000);
+      });
     </script>
     <script defer src="./js/fadeIn.js"></script>
     <script defer src="./js/nav-shrink.js"></script>
