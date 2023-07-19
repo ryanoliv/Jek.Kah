@@ -68,11 +68,15 @@
     />
 
     <!--Preload-->
-    <link rel="preload" href="https://use.typekit.net/uzi6vtc.css" as="style" />
+    <link
+      rel="preconnect"
+      href="https://use.typekit.net/uzi6vtc.css"
+      crossorigin
+    />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/loader.css" />
+    <!-- <link rel="stylesheet" href="/css/reset.css" /> -->
+    <!-- <link rel="stylesheet" href="/css/loader.css" /> -->
     <link
       rel="stylesheet"
       href="./css/reset.css"
@@ -91,12 +95,6 @@
       media="print"
       onload="this.media='all'; this.onload=null;"
     />
-    <link
-      rel="stylesheet"
-      href="/css/main.css"
-      media="print"
-      onload="this.media='all'; this.onload=null;"
-    />
 
     <!-- Google Search Console -->
     <meta
@@ -104,7 +102,11 @@
       content="xXU_4dNLc86vHOUxynaxLQpjHIGLvnis9DSwT_sZnpo"
     />
 
-    <link rel="stylesheet" href="https://use.typekit.net/uzi6vtc.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.typekit.net/uzi6vtc.css"
+      as="style"
+    />
 
     <!-- Schema -->
     <script type="application/ld+json">
@@ -273,7 +275,7 @@
           <p class="lighter">
             Together we can empower you to empower yourself.
           </p>
-          <a href="/services.html" class="btn btn__secondary">Read More</a>
+          <a href="/services.html" class="btn btn__secondary">See Offerings</a>
         </div>
       </div>
     </section>
@@ -1386,7 +1388,7 @@
         });
     </script>
     <script defer src="./js/fadeIn.js"></script>
-    <script defer src="./js/nav-shrink.js"></script>
+    <!-- <script defer src="./js/nav-shrink.js"></script> -->
     <script defer src="./js/dropdown.js"></script>
     <script defer src="./js/back-to-top.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
