@@ -232,9 +232,3 @@ body {
   visibility: visible;
   opacity: 1;
 } */
-
-/* New CSS class for the fade-in effect */
-.fade-in {
-  opacity: 1;
-  transition: opacity 1.5s ease-in;
-}

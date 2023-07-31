@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <style>
+      html {
+        opacity: 0;
+        animation: fadeInAnimation 1s ease-in forwards;
+      }
+
+      @keyframes fadeInAnimation {
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+
     <link rel="canonical" href="https://jessicareahealing.com/healings" />
 
     <meta
@@ -97,12 +110,12 @@
       <div class="header__nav-logo">
         <a href="/index.html"
           ><img
-          id="header-logo"
-          class="header--logo"
-          src="/media/logos/jessica-logo.webp"
-          alt="Jessica Réa Logo"
-          width="360"
-          height="120"
+            id="header-logo"
+            class="header--logo"
+            src="/media/logos/jessica-logo.webp"
+            alt="Jessica Réa Logo"
+            width="360"
+            height="120"
         /></a>
       </div>
       <!-- MOBILE NAV -->
