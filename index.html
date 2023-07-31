@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <style>
-      html {
-        visibility: hidden;
-        opacity: 0;
-      }
-    </style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -116,6 +110,13 @@
       }
     </script>
 
+    <!-- Add the fade-in class to the html element -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector("html").classList.add("fade-in");
+      });
+    </script>
+
     <title>Jessica Réa | Energy Healing Practitioner & Chef</title>
   </head>
   <body>
@@ -126,7 +127,9 @@
             id="header-logo"
             class="header--logo"
             src="/media/logos/jessica-logo.webp"
-            alt="Jek.Kah Logo"
+            alt="Jessica Réa Logo"
+            width="360"
+            height="120"
         /></a>
       </div>
       <!-- MOBILE NAV -->
@@ -160,6 +163,8 @@
                     class="down-arrow"
                     src="/media/icons/down-arrow.svg"
                     alt="Down Arrow"
+                    width="14"
+                    height="8"
                 /></a>
                 <ul class="sub-menu">
                   <li><a href="/rates.html">Rates</a></li>
