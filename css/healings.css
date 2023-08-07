@@ -36,6 +36,18 @@
   max-width: 310px;
 }
 
+.testimonials--grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+  place-items: flex-start;
+  justify-items: center;
+}
+
+.testimonials--grid > .testimonials--card {
+  flex: unset;
+}
+
 @media (min-width: 768px) {
   .healings-section {
     margin-top: 207px;
@@ -49,12 +61,6 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-/* @media (min-width: 920px) {
-  .healing-item img {
-    height: unset;
-  }
-} */
 
 @media (min-width: 1200px) {
   /* .healings-section {

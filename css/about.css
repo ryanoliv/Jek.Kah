@@ -1,19 +1,20 @@
-.about-page__about-section {
-  margin-top: 83px;
-  background-image: linear-gradient(
+.about-page__about-section,
+.about-section {
+  margin-top: 84px;
+  /* background-image: linear-gradient(
       rgba(56, 55, 55, 0.4),
       rgba(87, 85, 85, 0.4)
     ),
     url("../media/images/mobile/about-landing-m.webp");
   background-position: right;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
 
-  padding: 10rem 0;
+  /* padding: 10rem 0; */
 }
 
 .filler__photo {
@@ -34,8 +35,9 @@
 }
 
 @media (min-width: 760px) {
-  .about-page__about-section {
-    margin-top: 134px;
+  .about-page__about-section,
+  .about-section {
+    margin-top: 208px;
   }
 
   .experience-list {
@@ -51,15 +53,16 @@
 } */
 
 @media (min-width: 1024px) {
-  .about-page__about-section {
-    margin-top: 174px;
-    background-image: linear-gradient(
+  .about-page__about-section,
+  .about-section {
+    margin-top: 208px;
+    /* background-image: linear-gradient(
         rgba(56, 55, 55, 0.4),
         rgba(87, 85, 85, 0.4)
       ),
       url("../media/images/desktop/about-feet-sand-d.webp");
     background-position: right;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
   }
 }

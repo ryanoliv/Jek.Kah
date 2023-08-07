@@ -81,7 +81,7 @@ body {
 
 .about--text > p {
   margin-bottom: 2.9rem;
-  max-width: 500px;
+  max-width: 600px;
   letter-spacing: 0.5px;
 }
 
@@ -124,6 +124,7 @@ body {
 
 .about--img > img {
   border-radius: 4px;
+  object-fit: cover;
 }
 
 .home-testimonials-section {
