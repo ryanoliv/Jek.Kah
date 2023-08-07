@@ -552,7 +552,8 @@ p {
 
 .testimonials--container {
   display: flex;
-  width: 300%;
+  /* width: 300%; */
+  width: fit-content;
   transition: transform 0.3s ease-in-out;
 }
 
