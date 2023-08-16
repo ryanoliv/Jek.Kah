@@ -25,6 +25,9 @@
       content="Discover your true self with Jessica Réa, an experienced energy healing practitioner and spiritual guide. Empowering through healing, meditation, and coaching."
     />
 
+    <!--Preload-->
+    <link rel="preload" href="https://use.typekit.net/uzi6vtc.css" as="style" />
+
     <!--Social Media Display-->
     <meta
       property="og:title"
@@ -74,13 +77,25 @@
       href="/media/favicons/favicon-180.png"
     />
 
-    <!--Preload-->
-    <link rel="preload" href="https://use.typekit.net/uzi6vtc.css" as="style" />
-
     <!-- CSS -->
-    <!-- <link rel="stylesheet" href="/css/reset.css" /> -->
-    <!-- <link rel="stylesheet" href="/css/loader.css" /> -->
+
     <link
+      rel="stylesheet"
+      href="./css/reset.css"
+      onload="this.onload=null; this.removeAttribute('media');"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/main.css"
+      onload="this.onload=null; this.removeAttribute('media');"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/home.css"
+      onload="this.onload=null; this.removeAttribute('media');"
+    />
+
+    <!-- <link
       rel="stylesheet"
       href="./css/reset.css"
       media="print"
@@ -97,7 +112,7 @@
       href="./css/home.css"
       media="print"
       onload="this.media='all'; this.onload=null;"
-    />
+    /> -->
 
     <!-- Google Search Console -->
     <meta
